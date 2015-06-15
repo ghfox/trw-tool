@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package invparse;
 
 import java.awt.Color;
@@ -12,10 +9,6 @@ import java.util.*;
 import javax.swing.*; 
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-/**
- *
- * @author cook
- */
 public class View extends JFrame{
     JPanel panel, checks;
     String[] options = {"Glitter20","EasyWeed","CHEMICA","TRWHolo","Metal20","Strip15"};

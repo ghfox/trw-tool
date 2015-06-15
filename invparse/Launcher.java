@@ -1,12 +1,13 @@
+/*
+ * 
+ *H W Aycock
+ * Simple tool for making something more useable out of Ecwids CSVs.
+ */
 
 package invparse;
 
 import java.io.FileNotFoundException;
 
-/**
- *
- * @author cook
- */
 public class Launcher {
     public static void main(String[] args) throws FileNotFoundException{
         View view = new View();

@@ -1,17 +1,14 @@
+/*
+ * 
+ * is created in Launcher.java
+ */
 
 package invparse;
 
 import java.util.*;
 import java.io.*;
 
-/**
- *
- * @author Haley Aycock
- * A simple and quick program to convert
- * TRW's Ecwid CSV's into usable report CSV's.
- * This one was built to process HTV orders explicitly.
- * 
- */
+
 public class InvParse {
     private String inputname;
     private String outputname;

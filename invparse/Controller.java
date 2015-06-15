@@ -1,10 +1,4 @@
-
 package invparse;
-
-/**
- *
- * @author cook
- */
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
