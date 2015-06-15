@@ -8,7 +8,6 @@ package invparse;
 import java.util.*;
 import java.io.*;
 
-
 public class InvParse {
     private String inputname;
     private String outputname;
