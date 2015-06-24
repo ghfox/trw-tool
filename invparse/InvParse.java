@@ -51,7 +51,8 @@ public class InvParse {
         Scanner input = new Scanner(new File(inputname));       //read and constant
         String strFirstLine = input.nextLine();                 //variables collected
         String[] tokens = strFirstLine.split(",");              //for SKU and QUANTITY
-        							//positions.
+        input.close();							//positions.
+        
         while(i < tokens.length){
             token = tokens[i];
             if (token.equals("sku"))
@@ -67,6 +68,9 @@ public class InvParse {
         List<Integer> quanList = quanPass(inputname, skuList, skuPos, quaPos);  //The quantities are totalled on the 2nd pass
                                                                                 //using the SKU list
         printList(outputname, skuList, quanList);                               //The lists are printed to a CSV
+        
+        skuList = null;
+        quanList = null;
         
 	}
     
@@ -133,6 +137,10 @@ public class InvParse {
                     //Checks if it could be a valid SKU, then if it is, then tries to fetch and update the quantity.
                 }
         }
+      input.close();
+      line = null;
+      tokens = null; 
+      token = null;
       return quanList;
     }
    
@@ -163,8 +171,12 @@ public class InvParse {
             if (filterToken(token))
                 if (!skuList.contains(token))
                     skuList.add(token);
-        }       
+        }
+        input.close();
             //this loop collects all unique SKUs that meet the check criteria.
+        line = null;
+        tokens = null;
+        token = null; 
         
         return skuList;
         
