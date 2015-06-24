@@ -69,9 +69,6 @@ public class InvParse {
                                                                                 //using the SKU list
         printList(outputname, skuList, quanList);                               //The lists are printed to a CSV
         
-        skuList = null;
-        quanList = null;
-        
 	}
     
     public void printList(String outputname, List<String> skuList, List<Integer> quanList) throws FileNotFoundException{
@@ -138,9 +135,6 @@ public class InvParse {
                 }
         }
       input.close();
-      line = null;
-      tokens = null; 
-      token = null;
       return quanList;
     }
    
@@ -174,9 +168,6 @@ public class InvParse {
         }
         input.close();
             //this loop collects all unique SKUs that meet the check criteria.
-        line = null;
-        tokens = null;
-        token = null; 
         
         return skuList;
         
